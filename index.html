@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost" data-tag="font" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-container">
+        <div class="topnav">
+            <a href="#home" class="active">COMPANY LOGO</a>
+            <div id="myLinks" class="links">
+                <a href="#home">Home</a>
+                <a href="#contact">About us</a>
+                <a href="#about" onclick="showContactForm()">Contact us</a>
+
+
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Desktop Navigation Menu -->
+    <div class="home-container">
+        <div class="home-logo">
+            <h3 class="navbar-logo-title">COMPANY LOGO</h3>
+        </div>
+        <div class="home-navbar">
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#" onclick="showContactForm()">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>FINAL SALE</h1>
+    </div>
+
+    <!-- Sales Section -->
+    <div class="sale">
+        <h3>WOMEN`S SALES</h3>
+    </div>
+
+    <!-- Product Section -->
+    <div class="product-container">
+        <div class="product1">
+            <img alt="image" src="./images/1.jpg" class="product-image1" />
+            <div class="product-post-container">
+                <span class="product-text">
+                    <span>T-shirt a vintage print, 100% cotton</span>
+                </span>
+            </div>
+        </div>
+        <div class="product2">
+            <img alt="image" src="./images/2.jpg" class="product-image2" />
+            <div class="product-post-container">
+                <span class="product-text">
+                    <span>Flowing blouse with embroidery</span>
+                </span>
+            </div>
+        </div>
+        <div class="product3">
+            <img alt="image" src="./images/3.jpg" class="product-image3" />
+            <div class="product-post-container">
+                <span class="product-text">
+                    <span>Modern gypsy blouse</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Contact Form -->
+    <div id="contactForm" class="contact-form">
+        <div class="contact-form-content">
+            <span class="close" onclick="closeContactForm()">&times;</span>
+            <h2>CONTACT US</h2>
+            <form>
+                <label for="name" class="text">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="name" class="phone">Phone</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="email" class="email">Email</label>
+                <input type="email" id="email" name="email" class="email" required>
+
+                <label for="message" class="mmm">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="button">ИЗПРАТИ</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container1">
+            <span class="footer-text1">SHOP</span>
+            <a href="#" class="footer-text3">Womens</a>
+            <a href="#" class="footer-text4">Kids</a>
+            <a href="#" class="footer-text5">New</a>
+            <a href="#" class="footer-text6">Sate</a>
+        </div>
+        <div class="footer-container2">
+            <span class="footer-text1">COMPANY</span>
+            <a href="#" class="footer-text7">About us</a>
+            <a href="#" class="footer-text8">Press</a>
+            <a href="#" class="footer-text9">Contact us</a>
+            <a href="#" class="footer-text10">Teams of Use</a>
+            <a href="#" class="footer-text11">Your Privacy</a>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2006-2016</p>
+        </div>
+    </footer>
+
+    <!-- Include the JavaScript file -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
